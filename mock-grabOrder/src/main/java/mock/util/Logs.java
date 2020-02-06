@@ -1,0 +1,43 @@
+package mock.util;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Logs {
+    private final static int THREAD_TYPE_DEEP = 2;
+
+    /**
+     * A custom security manager that exposes the getClassContext() information
+     */
+    static class CallerSecurityManager extends SecurityManager {
+
+        public String getCallerClassName(int callStackDepth) {
+            return getClassContext()[callStackDepth].getName();
+        }
+    }
+
+    /**
+     * Using a Custom SecurityManager to get the caller classname.
+     */
+    private static final CallerSecurityManager CSM = new CallerSecurityManager();
+
+    /**
+     * Get a logger with current class name
+     *
+     * @return logger
+     */
+    public static Logger get() {
+        String className = CSM.getCallerClassName(THREAD_TYPE_DEEP);
+        return determineLogger(className);
+    }
+
+    /**
+     * Determines the class and the appropiate logger of the calling class.
+     *
+     * @return The (slf4j) logger of the caller
+     */
+    static Logger determineLogger(String callerClassName) {
+        return LoggerFactory.getLogger(callerClassName);
+    }
+
+}
