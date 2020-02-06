@@ -1,15 +1,15 @@
 package mock.controller;
 
-import com.mock.dto.Exposer;
-import com.mock.dto.SeckillExecution;
-import com.mock.dto.SeckillResult;
-import com.mock.entity.Seckill;
-import com.mock.enums.SeckillStatEnum;
-import com.mock.exception.RepeatKillException;
-import com.mock.exception.SeckillCloseException;
-import com.mock.exception.SeckillException;
-import com.mock.service.SeckillService;
-import com.mock.util.Logs;
+import mock.dto.Exposer;
+import mock.dto.SeckillExecution;
+import mock.dto.SeckillResult;
+import mock.entity.Seckill;
+import mock.enums.SeckillStatEnum;
+import mock.exception.RepeatKillException;
+import mock.exception.SeckillCloseException;
+import mock.exception.SeckillException;
+import mock.service.SeckillService;
+import mock.util.Logs;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

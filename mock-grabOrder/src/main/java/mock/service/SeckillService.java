@@ -1,11 +1,11 @@
 package mock.service;
 
-import com.mock.dto.Exposer;
-import com.mock.dto.SeckillExecution;
-import com.mock.entity.Seckill;
-import com.mock.exception.RepeatKillException;
-import com.mock.exception.SeckillCloseException;
-import com.mock.exception.SeckillException;
+import mock.dto.Exposer;
+import mock.dto.SeckillExecution;
+import mock.entity.Seckill;
+import mock.exception.RepeatKillException;
+import mock.exception.SeckillCloseException;
+import mock.exception.SeckillException;
 
 import java.math.BigDecimal;
 import java.util.List;

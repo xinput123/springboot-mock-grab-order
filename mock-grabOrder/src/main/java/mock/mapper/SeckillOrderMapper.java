@@ -1,6 +1,6 @@
 package mock.mapper;
 
-import com.mock.entity.SeckillOrder;
+import mock.entity.SeckillOrder;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

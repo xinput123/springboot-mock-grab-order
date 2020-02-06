@@ -1,6 +1,6 @@
 package mock.redis;
 
-import com.mock.util.Logs;
+import mock.util.Logs;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

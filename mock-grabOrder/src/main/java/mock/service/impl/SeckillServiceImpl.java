@@ -1,16 +1,16 @@
 package mock.service.impl;
 
-import com.mock.dto.Exposer;
-import com.mock.dto.SeckillExecution;
-import com.mock.entity.Seckill;
-import com.mock.entity.SeckillOrder;
-import com.mock.enums.SeckillStatEnum;
-import com.mock.exception.RepeatKillException;
-import com.mock.exception.SeckillCloseException;
-import com.mock.exception.SeckillException;
-import com.mock.mapper.SeckillMapper;
-import com.mock.mapper.SeckillOrderMapper;
-import com.mock.service.SeckillService;
+import mock.dto.Exposer;
+import mock.dto.SeckillExecution;
+import mock.entity.Seckill;
+import mock.entity.SeckillOrder;
+import mock.enums.SeckillStatEnum;
+import mock.exception.RepeatKillException;
+import mock.exception.SeckillCloseException;
+import mock.exception.SeckillException;
+import mock.mapper.SeckillMapper;
+import mock.mapper.SeckillOrderMapper;
+import mock.service.SeckillService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

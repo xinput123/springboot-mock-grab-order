@@ -1,7 +1,7 @@
 package mock.dto;
 
-import com.mock.entity.SeckillOrder;
-import com.mock.enums.SeckillStatEnum;
+import mock.entity.SeckillOrder;
+import mock.enums.SeckillStatEnum;
 
 /**
  * 封装执行秒杀后的结果
